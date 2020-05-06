@@ -1,0 +1,2 @@
+rootProject.name='UEB1'
+include ':app'
