@@ -14,7 +14,7 @@ class MyFirstActivity : AppCompatActivity() {
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_main)
-            Log.d("TAG", "Test World!")
+            Log.d("TAG", "123 Test")
 
 
 
