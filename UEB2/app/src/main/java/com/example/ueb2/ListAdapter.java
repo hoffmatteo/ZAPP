@@ -24,7 +24,7 @@ public class ListAdapter extends
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int
             viewType) {
-        View mItemView = mInflater.inflate(R.layout.listitem, parent, false);
+        View mItemView = mInflater.inflate(R.layout.recyclelayout, parent, false);
         return new ViewHolder(mItemView);
 
     }

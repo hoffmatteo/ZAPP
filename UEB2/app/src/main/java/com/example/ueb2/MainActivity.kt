@@ -1,16 +1,23 @@
 package com.example.ueb2
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import java.util.*
+import kotlin.math.log
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        try{
+            setContentView(R.layout.activity_main2)
+        } catch (e: Exception) {
+            Log.d("TAG", e.toString())
+
+    }
 
 
 
@@ -22,8 +29,11 @@ class MainActivity : AppCompatActivity() {
         )
         mList.sort()
 
-
         var mRecyclerView: RecyclerView = findViewById(R.id.recyclerview)
+
+
+
+
         var mAdapter= ListAdapter(this, mList)
         mRecyclerView.adapter = mAdapter
         mRecyclerView.layoutManager = LinearLayoutManager(this)
