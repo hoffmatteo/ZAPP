@@ -2,10 +2,35 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="all">
         <item
+            android:title="@string/menu_nav_view_dashboard"
             android:id="@+id/menu_nav_view_dashboard"
-            android:icon="@drawable/ic_dashboard"
+            android:icon="@drawable/ic_dashboard"></item>
+        <item android:title="@string/nav_item_title_travel_stream" android:id="@+id/menu_nav_item_travel_stream" android:icon="@drawable/ic_action_airplane"/>
+
+        <item android:title="@string/nav_item_title_my_music" android:id="@+id/menu_nav_items_music" android:icon="@drawable/ic_action_music"/>
+
+        <item android:title="@string/nav_item_title_my_books" android:id="@+id/menu_nav_item_books" android:icon="@drawable/ic_action_book"/>
             android:title="Dashboard" />
         <!-- Further items -->
+
+
+
     </group>
+
+
+        -<group android:checkableBehavior="none" android:id="@+id/menu_nav_drawer_group_2">
+
+        <item android:title="@string/nav_item_title_settings" android:id="@+id/menu_nav_item_settings" android:icon="@drawable/ic_action_settings"/>
+
+    </group>
+
+
+        -<group android:checkableBehavior="none" android:id="@+id/menu_nav_drawer_group_3">
+
+        <item android:title="@string/nav_item_title_about" android:id="@+id/menu_nav_item_about" android:icon="@drawable/ic_action_info"/>
+
+    </group>
+
+
 
 </menu>

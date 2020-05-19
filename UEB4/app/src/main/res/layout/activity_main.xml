@@ -19,9 +19,23 @@
             android:background="?attr/colorPrimary"
             android:elevation="4dp" />
 
+        <FrameLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+        </FrameLayout>
+
+
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
+        app:headerLayout="@layout/include_header_nav_drawer"
+        app:itemIconTint="@color/state_list_text_icon_nav_item"
+        app:itemTextColor="@color/state_list_text_icon_nav_item"
+        android:id="@+id/main_navigation_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
